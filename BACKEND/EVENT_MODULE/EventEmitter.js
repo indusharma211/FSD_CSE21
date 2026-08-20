@@ -11,11 +11,33 @@ event.emit("greet");
 
 
 //1.  create a custom eventemitter that triggers "greet" or "exit"
-//2.  Simulate DOM- like event handling in Node.js using events
+
 class MyEmitter extends EventEmitter{}
 const event =new MyEmitter();
 event.on("greet",(msg)=>{
     console.log(`hello ${msg}`);//Template literals: `${var} 
 })
+event.on("exit")
 event.emit("greet","CSE 21 ,this is Fsd class");
+event.emit("exit")
+
+//2.  Simulate DOM- like event handling in Node.js using events
+//Button: click and mouseover events
+class Button extends EventEmitter{
+    click(){
+        console.log("/n call button click event");
+        this.emit("click");
+    }
+
+    mouseover(){
+        console.log("/n call button mouseover event");
+        this.emit("mouseover");
+    }
+
+
+}
+const event=New Button();
+event.on("click",())
+
+//visualize the  event loop using setTimeout ,setImmediate and process.nextTick
 
