@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "himanshu",
+    "price": "23342",
+    "category": "1"
+  },
+  {
+    "id": 2,
+    "name": "watch",
+    "price": "5000",
+    "category": "electronics"
+  }
+]
