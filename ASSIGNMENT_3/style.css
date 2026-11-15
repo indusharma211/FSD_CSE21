@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #17172f;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    min-height: 450px;
+    background: linear-gradient(135deg, #17172f, #51418c);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h3 {
+    font-size: 25px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+    color: #c4b5fd;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #a78bfa;
+    color: #17172f;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #51418c;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.section p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin: 18px auto;
+    max-width: 650px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #51418c;
+    margin-bottom: 10px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill {
+    background-color: #51418c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+#contact a {
+    color: #51418c;
+}
+
+footer {
+    background-color: #17172f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+}
